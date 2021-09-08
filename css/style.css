@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #e0e0e0;
+}
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.navbar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content:space-around; */
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 4%;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  height: 40px;
+}
+.navbar ul {
+  display: inline;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 200px;
+}
+.navbar .listItems a {
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 17px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.navbar .menu {
+  height: 30px;
+  margin-left: 100px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* .navbar .menu:hover{
+
+} */
+.navbar .button {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding: 8px 30px;
+  background-color: white;
+  margin-left: 100px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 700px;
+}
+.centerContents {
+  position: absolute;
+  top: 40vh;
+  left: 42%;
+  text-align: center;
+  font-family: Montserrat;
+}
+.centerContents h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.centerContents p {
+  font-weight: lighter;
+  font-size: 13px;
+  margin-bottom: 30px;
+  color: #656464;
+}
+.centerContents a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  background-color: #ff214f;
+  border-radius: 5px;
+}
+/* animation monkey */
+.monkey {
+  position: absolute;
+  height: 400px;
+  top: -80px;
+  left: -200px;
+  animation-name: monkey;
+  animation-duration: 2s;
+  background-color: transparent;
+}
+@keyframes monkey {
+  from {
+    transform: rotate(-150deg);
+    left: -400px;
+  }
+  to {
+    transform: rotate(0deg);
+    left: -200px;
+  }
+}
+/* animation flower pot */
+.flower {
+  position: absolute;
+  right: 4%;
+  height: 350px;
+  top: -10vh;
+  animation-name: flower;
+  animation-duration: 2s;
+  background-color: transparent;
+}
+@keyframes flower {
+  from {
+    transform: rotate(-150deg);
+    right: -400px;
+  }
+  to {
+    transform: rotate(0deg);
+    right: 4%;
+  }
+}
+/* animation Tablet */
+.tablet {
+  position: absolute;
+  bottom: -200px;
+  right: -400px;
+  animation-name: tablet;
+  animation-duration: 2s;
+  background-color: transparent;
+}
+@keyframes tablet {
+  from {
+    transform: rotate(180deg);
+    right: -1000px;
+  }
+  to {
+    transform: rotate(0deg);
+    right: -400px;
+  }
+}
+/* animation pen */
+.pen {
+  position: absolute;
+  height: 400px;
+  bottom: 0;
+  right: 15%;
+  background-color: transparent;
+  animation-name: pen;
+  animation-duration: 2s;
+}
+@keyframes pen {
+  from {
+    transform: rotate(180deg);
+    right: -400px;
+  }
+  to {
+    transform: rotate(0deg);
+    right: 15%;
+  }
+}
+/* animation paper */
+.paper {
+  height: 800px;
+  background-color: transparent;
+  position: absolute;
+  bottom: -400px;
+  left: -300px;
+  animation-name: paper;
+  animation-duration: 2s;
+}
+@keyframes paper {
+  from {
+    transform: rotate(150deg);
+    bottom: -1000px;
+  }
+  to {
+    transform: rotate(0deg);
+    bottom: -400px;
+  }
+}
+/* animation redPen */
+.redPen {
+  height: 300px;
+  background-color: transparent;
+  position: absolute;
+  left: 12%;
+  bottom: -130px;
+  animation-name: redPed;
+  animation-duration: 3s;
+}
+@keyframes redPed {
+  from {
+    transform: rotate(-150deg);
+    bottom: -700px;
+  }
+  to {
+    transform: rotate(0deg);
+    bottom: -130px;
+  }
+}
+/* animation marker */
+.marker {
+  background-color: transparent;
+  height: 250px;
+  position: absolute;
+  bottom: 39px;
+  left: 7%;
+  animation-name: marker;
+  animation-duration: 3s;
+}
+@keyframes marker {
+  from {
+    transform: rotate(-150deg);
+    bottom: -700px;
+  }
+  to {
+    transform: rotate(0deg);
+    bottom: 40px;
+  }
+}
+/* animation paperclip */
+.paperclip {
+  height: 80px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 180px;
+  left: 25%;
+  animation-name: paperclip;
+  animation-duration: 3s;
+}
+@keyframes paperclip {
+  from {
+    transform: rotate(-150deg);
+    bottom: -700px;
+  }
+  to {
+    transform: rotate(0deg);
+    bottom: 180px;
+  }
+}
+/* .animatio paperclip1 */
+.paperclip1 {
+  transform: rotate(120deg);
+  height: 80px;
+  position: absolute;
+  background-color: transparent;
+  bottom: 220px;
+  left: 21%;
+  animation-name: paperclip1;
+  animation-duration: 3s;
+}
+@keyframes paperclip1 {
+  from {
+    transform: rotate(-150deg);
+    bottom: -700px;
+  }
+  to {
+    transform: rotate(120deg);
+    bottom: 220px;
+  }
+}
